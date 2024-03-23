@@ -8,7 +8,6 @@ export default defineConfig({
     org: "jsm-no",
     project: "javascript-react"
   })],
-
   build: {
     sourcemap: true
   }
