@@ -141,6 +141,8 @@ const VideoCarousel = () => {
         case "video-last":
           // 最後のビデオの場合の処理
           setVideo((pre) => ({ ...pre, isLastVideo: true }));
+          handleProcess("video-reset");
+          handleProcess("play");
           break;
    
         case "video-reset":
