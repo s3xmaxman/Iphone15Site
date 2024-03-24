@@ -7,7 +7,9 @@ import * as Sentry from "@sentry/react";
 Sentry.init({
   dsn: "https://eaf550bead0a3fa02de7e23bc3a0abd7@o4506958884569088.ingest.us.sentry.io/4506958889287680",
   integrations: [
-    Sentry.browserTracingIntegration(),
+    Sentry.browserTracingIntegration({
+       enableInp: true,
+    }),
     Sentry.metrics.metricsAggregatorIntegration(),
     Sentry.reactRouterV6BrowserTracingIntegration({
       useEffect: React.useEffect,
